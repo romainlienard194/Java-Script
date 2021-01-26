@@ -1,4 +1,4 @@
-html<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,11 +13,22 @@ html<!DOCTYPE html>
 </head>
 
 <body>
-    
+    <h3>Afficher la fonction :</h3>
+    <button onclick="affiche()">Afficher</button>
 </body>
 
 <script>
-    
+    var a = 3;
+    var b = 2;
+
+    function multiplie(x = 8) {
+       return x * 3;
+    }
+
+    function affiche() {
+        alert(multiplie(a));
+        alert(multiplie(b)); 
+    }
 </script>
 
 </html>
