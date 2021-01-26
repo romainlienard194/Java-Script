@@ -22,30 +22,28 @@
 <script>
     function aire() {
 
-        var longueur;
-        var largeur;
+        var rayon;
+        var pi = 3.14;
         var aire;
 
-        longueur = prompt('Entrez une longueur : ');
-        largeur = prompt('Entrez une largeur : ');
+        rayon = prompt('Entrez une longueur : ');
 
-        aire = longueur * largeur;
+        aire = pi * (rayon * rayon);
 
-        alert("L'aire du rectangle est de " + aire + " cm²");
+        alert("L'aire du cercle est de " + aire + " cm²");
     }
 
     function perimetre() {
 
-        var longueur;
-        var largeur;
+        var rayon;
+        var pi = 3.14;
         var perimetre;
 
-        longueur = prompt('Entrez une longueur : ');
-        largeur = prompt('Entrez une largeur : ');
+        rayon = prompt('Entrez une longueur : ');
 
-        perimetre = (longueur * 2) + (largeur * 2);
+        perimetre = 2 * pi * rayon;
 
-        alert("Le périmètre du rectangle est de " + perimetre + " cm");
+        alert("Le périmètre du cercle est de " + perimetre + " cm");
     }
 </script>
 
