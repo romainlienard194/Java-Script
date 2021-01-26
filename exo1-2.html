@@ -14,8 +14,14 @@
 
 <body>
     <form name="oui">
-        <button onclick="aire()">Aire</button>
-        <button onclick="perimetre()">Périmètre</button>
+
+        <p>Calculer l'aire et le périmètre d'un rectangle</p>
+        <button onclick="aire()">Aire du rectangle</button>
+        <button onclick="perimetre()">Périmètre du rectangle</button>
+
+        <p>Calculer l'aire et le périmètre d'un cercle</p>
+        <button onclick="aireCercle()">Aire du cercle</button>
+        <button onclick="perimetreCercle()">Périmètre du cercle</button>
     </form>
 </body>
 
@@ -46,6 +52,32 @@
         perimetre = (longueur * 2) + (largeur * 2);
 
         alert("Le périmètre du rectangle est de " + perimetre + " cm");
+    }
+
+    function aireCercle() {
+
+        var rayon;
+        var pi = 3.14;
+        var aire;
+
+        rayon = prompt('Entrez une longueur : ');
+
+        aire = pi * (rayon * rayon);
+
+        alert("L'aire du cercle est de " + aire + " cm²");
+    }
+
+    function perimetreCercle() {
+
+        var rayon;
+        var pi = 3.14;
+        var perimetre;
+
+        rayon = prompt('Entrez une longueur : ');
+
+        perimetre = 2 * pi * rayon;
+
+        alert("Le périmètre du cercle est de " + perimetre + " cm");
     }
 </script>
 
