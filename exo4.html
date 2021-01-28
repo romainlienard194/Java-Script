@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <form>
-            <button onclick="affiche()">Afficher</button>
-        </form>
-    </body>
 
-    <script>
-        var tab = ['-2' , '1' , '4'];
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
 
-        function additionne(x) {
-            return x + 2;
-        }
+<body>
+    <form>
+        <button onclick="affiche(additionne())">Afficher</button>
+    </form>
+</body>
 
-        function affiche() {
-            alert(affiche(tab = ['-2']));
-            alert(affiche(tab = ['4']));
-        }
-    </script>
+<script>
+    function additionne(x = 0) {
+        resultat = x + 2
+        return resultat;
+    }
+
+    function affiche(additionne) {
+        var tab = [-2, 1, 4];
+
+        tab[0] += resultat;
+        tab[2] += resultat;
+
+        alert('La fonction affiche tab[' + tab[0] + ',' + tab[1] + ',' + tab[2] + ']');
+    }
+</script>
+
 </html>

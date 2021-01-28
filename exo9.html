@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    
+    <style>
+        .centre {
+            width: 500px;
+        }
+    </style>
+    </head>
+    <body>
+        <p id="text" class="centre">
+            Ecrire un paragraphe (quelques lignes), d'une largeur de 500 pixels. En cliquant sur ce
+            paragraphe, il doit s'afficher grosso-modo au centre de la page, avec un mot par ligne. Le
+            double click doit permettre de revenir au format initial (aligné à gauche, occupant une
+            largeur de 500 pixels).
+        </p>
+    </body>
+
+    <script>
+        const paragraphe = document.getElementById("text");
+        paragraphe.addEventListener("click", function(){
+            paragraphe.style.textAlign = "center";
+            paragraphe.style.width = "1px";
+            paragraphe.style.marginLeft = "50%";
+        });
+
+        paragraphe.addEventListener("dblclick", function(){
+            paragraphe.style.textAlign = "center";
+            paragraphe.style.width = "500px";  
+            paragraphe.style.marginLeft = "40%";   
+        });
+
+    </script>
+</html>

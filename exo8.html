@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <p id="color" class="text">Salut je suis php</p>
+</body>
+
+<script>
+    const phrase = document.getElementById("color");
+    document.addEventListener("DOMContentLoaded", function () {
+
+        phrase.style.color = "blue";
+    });
+
+    phrase.addEventListener("click", function () {
+
+        phrase.style.color = "lime";
+    });
+
+    phrase.addEventListener("mouseover", function () {
+
+        phrase.style.color = "red";
+    });
+
+    phrase.addEventListener("dblclick", function () {
+
+        phrase.style.color = "#BB00FF";
+    });
+    
+</script>
+
+</html>
